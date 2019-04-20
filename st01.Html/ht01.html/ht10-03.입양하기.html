@@ -4,16 +4,20 @@
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
+        .menu { 
+            list-style: none; /*disc 기호 감추기*/
+            display: inline-block; /*점을 없애고 한줄로 만들기*/
+            margin-right: 20px;} /*오른쪽 여백*/
     </style>
 </head>
 <body>
         <h1>입양하기</h1>
 
         <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+            <li class="menu"><a href="#">애완견 종류</a></li>
+            <li class="menu"><a href="#">입양하기</a></li>
+            <li class="menu"><a href="#">건강돌보기</a></li>
+            <li class="menu"><a href="#">더불어살기</a></li>
         </ul>
 
             <h2>강아지 용품 준비하기</h2>
@@ -29,6 +33,6 @@
                 <li>샴푸, 린스, 애견용 타올 </li>
             </ul>
 
-        <p>Copyright 2012 funnycom</p>
+        <p>Copyright 2012 funnycom</p> 
 </body>
 </html>
