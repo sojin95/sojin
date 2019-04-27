@@ -3,6 +3,41 @@
 <head>
     <meta charset="utf-8">
     <title>텍스트 속성</title>
+    <style>
+        /*텍스트 색상 지정*/
+
+        .color_hexa {
+            color: #09fa04;
+        }
+        .color_rgba {
+            color: rgb(233, 255, 12, 0.5);
+        }
+        .color_name {
+            color: lightblue;
+        }
+        .color_hsla {
+            color: hsla(244, 23, 34, 0.5);
+        }
+
+        /*텍스트 수평 정렬 지정*/
+
+        .align_left {text-align: left;}
+        .align_center {text-align: center;}
+        .align_right {text-align: right;}
+        .align_justify {text-align: justify;}
+       
+        /*텍스트 쓰기 방향 지정*/
+        .direction1 {direction: ltr;}
+        .direction2 {direction: rtl;}
+
+        /*텍스트 밑줄 설정*/
+
+        .decoration1 {text-decoration:none;}
+        .decoration2 {text-decoration:underline;}
+        .decoration3 {text-decoration:overline;}
+        .decoration4 {text-decoration:line-through;}
+
+    </style>
 </head>
 <body>
     <pre>
@@ -16,7 +51,7 @@
         <p class = "color_hexa"> #09fa04 </p>
         <p class = "color_rgba"> rgba( 233,255,12, 0.5) </p>
         <p class = "color_name"> lightblue </p>
-        <p class = "color_hsla"> hsla( 244, 23, 34) </p>
+        <p class = "color_hsla"> hsla( 244, 23, 34, 0.5) </p>
     </div>
 
     <hr>
@@ -47,4 +82,4 @@
 
 </body>
 </html>
-
+

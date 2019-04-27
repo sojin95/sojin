@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>상태선택자</title>
 </head>
 <style>
-    
+    tr {
+        background-color: chartreuse;
+        width: 200px;
+        height: 60px;
+    }
+
+    td {
+        width: 100px;
+    }
+
+    .class {
+        background-color: blueviolet;
+    }
+
+    .list {
+        background-color: brown;
+    }
 </style>
+
 <body>
     <table>
-        <tr><td>첫 번째  </td></tr>
-        <tr><td>두 번째  </td></tr>
-        <tr><td>세 번째  </td></tr>
-        <tr><td>네 번째  </td></tr>
-        <tr><td>다섯 번째</td></tr>
-        <tr><td>여섯 번째</td></tr>
-        <tr><td>일곱 번째</td></tr>
+        <tr>
+            <td>첫 번째 </td>
+        </tr>
+        <tr class="class">
+            <td>두 번째 </td>
+        </tr>
+        <tr class="list">
+            <td>세 번째 </td>
+        </tr>
+        <tr>
+            <td>네 번째 </td>
+        </tr>
+        <tr class="class">
+            <td>다섯 번째</td>
+        </tr>
+        <tr class="list">
+            <td>여섯 번째</td>
+        </tr>
+        <tr>
+            <td>일곱 번째</td>
+        </tr>
     </table>
 </body>
+
 </html>
