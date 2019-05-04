@@ -1,9 +1,41 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>텍스트 스타일</title>
 </head>
+<style>
+    div.book-img {
+        float: left;
+    }
+
+    div.container::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+    h1 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .container {
+        float: left;
+        font-family: "맑은고딕"
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .accent {
+        color: red;
+    }
+</style>
+
 <body>
     <div class="container">
         <div class="book-img">
@@ -23,4 +55,5 @@
         </div>
     </div>
 </body>
-</html>
+
+</html>

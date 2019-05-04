@@ -1,9 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
 </head>
+<style>
+    /*브라우저 기본 마진 패딩 초기화*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 960px;
+        margin: 0 auto;
+        /*수평 가운데 정렬*/
+        background-color: #e6e6e6;
+    }
+
+    /*서브 메뉴 설정 */
+    .outer-menu-item {
+        display: block;
+        height: 30px;
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    /*메인 타이틀 설정 */
+    .outer-menu-item>.inner-menu {
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    #page-wrapper {
+        background-color: white;
+        margin: 40px 0 40px 0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+    }
+
+    ul.outer-menu > li {
+        line-height: 50px;
+        list-style-type: none;
+        font-weight: bold;
+        height: 100px;
+        width: 100px;
+        padding-left: 10px;
+        float: left;
+    }
+
+    nav {
+        height: 50px;
+        border: 1px solid black;
+        border-right: 0px;
+        border-left: 0px;
+    }
+
+    #content,
+    nav::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+   .menu-title:hover {
+        color: black;
+    }
+
+    .search-bar {
+        padding: 10px;
+    }
+
+    .pull-left::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+    .input-search {
+        height: 20px;
+        width: 150px;
+        border-radius: 10px 0px 0px 10px;
+        padding-left: 15px;
+        float: left;
+    }
+
+    .input-search-submit {
+        height: 25px;
+        width: 50px;
+        border-radius: 0px 10px 10px 0px;
+        float: left;
+    }
+
+    .input-search:focus {
+        outline: 0px;
+    }
+
+    .input-search-submit:focus {
+        outline: 0px;
+    }
+
+    .pull-left {
+        float: left;
+    }
+
+    .pull-right {
+        float: right;
+    }
+
+    #main-section {
+        width: 750px;
+        float: left;
+    }
+
+    #main-aside {
+        width: 130px;
+        float: right;
+    }
+
+    #main-footer {
+        clear: both;
+        display: block;
+        content: '';
+    }
+</style>
+
 <body>
     <div id="page-wrapper">
         <header id="main-header">
@@ -65,9 +191,24 @@
                         <img src="http://placehold.it/430x280" />
                         <br />
                         <br />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem
+                            pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin
+                            commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales.
+                            Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat
+                            rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula
+                            vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non
+                            dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit
+                            augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                            massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum
+                            tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus
+                            posuere commodo. In hac habitasse platea dictumst.</p>
                         <br />
-                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.</p>
+                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed
+                            magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum
+                            justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam
+                            ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut
+                            magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor
+                            risus. Donec accumsan ante vel justo porttitor volutpat.</p>
                     </div>
                 </article>
             </section>
@@ -98,7 +239,9 @@
         </footer>
     </div>
 </body>
-</html>
+
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
@@ -108,8 +251,8 @@
         $('.outer-menu-item').mouseover(function () {
             $(this).find('.inner-menu').show();
         })
-        .mouseout( function () {
-            $(this).find('.inner-menu').hide();
-        });
+            .mouseout(function () {
+                $(this).find('.inner-menu').hide();
+            });
     });
 </script>
