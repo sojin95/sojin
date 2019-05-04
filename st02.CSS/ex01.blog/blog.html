@@ -11,12 +11,39 @@
         margin: 0;
         padding: 0;
     }
+    li {
+        list-style-type: none;
+    }
 
     body {
         width: 960px;
         margin: 0 auto;
         /*수평 가운데 정렬*/
         background-color: #e6e6e6;
+    }
+
+    #page-wrapper {
+        background-color: white;
+        margin: 40px 0 40px 0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+    }
+
+    nav {
+        height: 50px;
+        border: 1px solid black;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    
+
+    ul.outer-menu > li {
+        line-height: 50px;
+        list-style-type: none;
+        font-weight: bold;
+        width: 100px;
+        padding-left: 10px;
+        float: left;
     }
 
     /*서브 메뉴 설정 */
@@ -31,34 +58,10 @@
     .outer-menu-item>.inner-menu {
         background-color: white;
         text-align: center;
-        width: 100%;
-        position: absolute;
-        top: 40px;
-        left: 0;
-    }
-
-    #page-wrapper {
-        background-color: white;
-        margin: 40px 0 40px 0;
-        padding: 10px 20px 10px 20px;
-        border-radius: 10px;
-    }
-
-    ul.outer-menu > li {
-        line-height: 50px;
-        list-style-type: none;
-        font-weight: bold;
-        height: 100px;
         width: 100px;
-        padding-left: 10px;
-        float: left;
-    }
-
-    nav {
-        height: 50px;
-        border: 1px solid black;
-        border-right: 0px;
-        border-left: 0px;
+        position: relative;
+        top: 0px;
+        left: 0;
     }
 
     #content,
@@ -66,10 +69,6 @@
         clear: both;
         display: block;
         content: '';
-    }
-
-   .menu-title:hover {
-        color: black;
     }
 
     .search-bar {
