@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <title>display 속성</title>
 </head>
+<style>
+    li {
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        display: inline-block; /*텍스트 효과가 나와서 마진 -6px을 같이 써줘야한다. */
+        margin: -6px;
+    }
+    li:nth-child(odd) {
+        background-color: red;
+    }
+    li:nth-child(even) {
+        background-color: green;
+    }
+    .a1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .a2 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+</style>
 <body>
     <ul>
-        <li>1번째</li>
+        <li class="a1">1번째</li>
         <li>2번째</li>
         <li>3번째</li>
         <li>4번째</li>
         <li>5번째</li>
         <li>6번째</li>
         <li>7번째</li>
-        <li>8번째</li>
+        <li class="a2">8번째</li>
     </ul>
 </body>
 </html>

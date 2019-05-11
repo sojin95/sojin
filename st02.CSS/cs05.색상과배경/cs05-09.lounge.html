@@ -5,7 +5,47 @@
     <meta charset="utf-8">
     <title>Head First Lounge</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
+    body {
+        padding: 30px;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #elixirs {
+        float: right;
+        border: 1px solid #000000;
+        text-align: center;
+        width: 150px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    #elixirs::after {
+        clear:both;
+        display: block;
+        content: '';
+    }
+
+    #guarantee {
+        background-image: url(./images/background.gif);
+        background-repeat: no-repeat;
+        border: 1px solid #000000;
+        background-color: aquamarine;
+        background-position-x: 10px;
+        width: calc( 100% - 330px );
+        padding: 20px 40px 20px 90px;
+        }
+    
+</style>
 <body>
     <p><img src="images/logo.gif" alt="Head First Lounge"></p>
 

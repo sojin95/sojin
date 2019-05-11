@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>display 속성</title>
 </head>
+<style>
+    #container>div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 10px;
+        background-color: gold;
+    }
+    #container {
+        display: inline-block; /* 적용되는 태그에 직접 설정 */
+        display: flex; /* 적용 될 부모태그에 설정 */
+        flex-direction: row;
+    }
+</style>
 <body>
     <div id="container">
         <div class="ex1">첫번째</div>
@@ -11,4 +25,4 @@
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>
