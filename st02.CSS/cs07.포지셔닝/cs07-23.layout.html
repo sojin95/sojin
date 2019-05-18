@@ -5,6 +5,29 @@
     <meta charset="utf-8">
     <title>2단 레이아웃</title>
 </head>
+<style>
+    * {margin: 0; padding: 0;}
+    #header {
+        border: 1px solid gray;
+        width: clac(100% - 20px);
+        height: 100px;
+        line-height: 100px;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        line-height: 30px;
+        padding: 10px;
+    }
+    #sidebar {
+        text-align: center;
+        list-style: none;
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
+</style>
 <body>
     <div id="container">
         <div id="header">
@@ -29,4 +52,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>

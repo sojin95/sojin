@@ -4,7 +4,47 @@
     <meta charset="utf-8">
     <title>고정 레이아웃</title>
 </head>
-
+<style>
+    * {margin: 0; padding: 0;}
+    #wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+    header {
+        width: 100%;
+        height: 120px;
+        background-color: lightblue;
+        box-sizing: border-box;
+    }
+    #wrapbody > section.content {
+        width: 660px;
+        height: 100%;
+        background-color: lightsalmon;
+        float: left;
+        box-sizing: border-box;
+    }
+    #wrapbody {
+        height: 400px;
+    }
+    #wrapbody > aside.right-side {
+        width: 300px;
+        height: 100%;
+        background-color: lightgoldenrodyellow;
+        float: right;
+        box-sizing: border-box;
+    }
+    #wrapbody::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+    footer {
+        width: 100%;
+        height: 120px;
+        background-color: lightcoral;
+        box-sizing: border-box;
+    }
+</style>
 <body>
     <div id="wrapper">
         <header>
@@ -23,4 +63,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html>

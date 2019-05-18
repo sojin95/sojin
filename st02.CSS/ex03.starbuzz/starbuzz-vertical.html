@@ -4,7 +4,39 @@
     <meta charset="utf-8">
     <title>Starbuzz Coffee</title>
   </head>
-
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: tan;
+    }
+    #header, #footer {
+      background-color: sienna;
+      width: calc(100% - 20px);
+      margin: 10px;
+    }
+    #main, #sidebar {
+      background-image: url(images/background.gif);
+      background-repeat: repeat;
+      width: calc(100% - 20px);
+      margin: 10px;
+    }
+    div {
+      padding:10px;
+      font-size: 10px;
+    }
+    div > h1 {
+      font-size: 10px;
+      color: blueviolet;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .beanheading {
+      text-align: center;
+    }
+  </style>
   <body>
     <div id="header">
       <img src="images/header.gif" alt="Starbuzz Coffee header image">
@@ -88,4 +120,4 @@
 
   </body>
 </html>
-
+

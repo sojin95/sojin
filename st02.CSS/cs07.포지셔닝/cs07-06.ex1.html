@@ -4,7 +4,26 @@
     <meta charset="utf-8">
     <title>절대 좌표 실습</title>
 </head>
-
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    div.absolute {
+        position: absolute;
+        left: 250px;
+        top: 350px;
+        border: 1px dotted black;
+    }
+    h3.pos_left {
+        position: relative;
+        left: -100px;
+    }
+    h3.pos_right {
+        position: relative;
+        left: +100px;
+    }
+</style>
 <body>
 	<xmp>
 h2 태그의 위치는 절대 좌표계(0, 0)를 기준으로 설정

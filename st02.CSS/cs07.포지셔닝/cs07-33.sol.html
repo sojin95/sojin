@@ -4,6 +4,31 @@
     <meta charset="utf-8">
     <title>CSS 선택자</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav.main-menu {
+        border: 1px solid black;
+        height: 50px;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        line-height: 50px;
+        padding-left: 50px;
+        float: left;
+    }
+    li > a {
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+    li > a:active {
+        color: blue;
+    }
+</style>
 <body>
     <nav class="main-menu">
         <ul>
@@ -13,4 +38,4 @@
         </ul>
     </nav>
 </body>
-</html>
+</html>

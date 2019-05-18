@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>레이아웃 B</title>
 </head>
-
+<style>
+    * {margin: 0; padding: 0;}
+    #wrap {width: 900px; height: 100px;}
+    #sidebar{background-color: lightskyblue; float: left; width: 400px; height: 100%;}
+    #ligthbar {float: right; width: 500px; height: 100%;}
+    #header{background-color: lightgreen; height: 30px;}
+    #content{background-color: lightcoral; height: calc(100% - 30px - 30px);}
+    #footer{background-color: lightpink; height: 30px;}
+</style>
 <body>
     <h1>레이아웃 B</h1>
 
@@ -12,19 +20,20 @@
         <div id="sidebar">
             sidebar
         </div>
+        <div id="ligthbar">
+            <div id="header">
+                header
+            </div>
 
-        <div id="header">
-            header
-        </div>
+            <div id="content">
+                content
+            </div>
 
-        <div id="content">
-            content
-        </div>
-
-        <div id="footer">
-            footer
+            <div id="footer">
+                footer
+            </div>
         </div>
     </div>
 </body>
 
-</html>
+</html>
