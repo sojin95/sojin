@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>레이아웃 A ::: Auto stretch content's height</title>
 </head>
+<style>
+    * { margin: 0; padding: 0;}
+    html, body {height: 100%;} /* 높이가 꽉 찬 화면 만들기 */
+    #wrap {height: 100%;}
+    #header {border: 1px solid red; height: 50px; box-sizing: border-box;}
+    /* boder 나 padding 을 계산하지 않으려면
+    의미: 박스를 그릴떄 바깥에서 안쪽으로 그려 들어간다. */
+    
+    #content {border: 1px solid green; height: calc( 100% - 2*50px);}
+    #footer {border: 1px solid blue; height: 50px; box-sizing: border-box;}
+</style>
 <body>
     <div id="wrap">
         <div id="header">
@@ -20,4 +31,4 @@
     </div>
 </body>
 
-</html>
+</html>

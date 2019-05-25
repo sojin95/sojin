@@ -1,8 +1,100 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>연습문제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 가운데 정렬*/
+        #wrapper {
+            margin: 0 auto;
+        }
+
+        #img-box>div {
+            height: 50px;
+            float: left;
+        }
+
+        .img1 {
+            background-color: orange;
+        }
+
+        .img2 {
+            background-color: blue;
+        }
+
+        .img3 {
+            background-color: pink;
+        }
+
+        .img4 {
+            background-color: greenyellow;
+        }
+
+        /* 1024px 이상 작성 */
+        #wrapper {
+            width: 100%;
+        }
+
+        #img-box>div.box {
+            width: 22%;
+            margin: 0.5%;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:480px) {
+
+            /* 박스를 보이지 않게 한다*/
+            #img-box {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:480px) and (max-width:760px) {
+            #wrapper {
+                width: 480px;
+            }
+
+            #img-box {
+                width: 100%;
+            }
+
+            #img-box>div {
+                clear: both;
+                width: 100%;
+                margin: 10px;
+                box-sizing: border-box;
+            }
+
+            @media screen and (min-width:760px) and (max-width:1024px) {
+
+                /*1행에 2개만 나오게*/
+                #wrapper {
+                    width: 768px;
+                }
+
+                #img-box {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                #img-box>div.box {
+                    margin: 0.5%;
+                    width: 48%;
+                    box-sizing: border-box;
+                }
+            }
+
+
+            @media screen and (min-width:1024px) {}
+    </style>
 </head>
 
 <body>
@@ -16,4 +108,5 @@
         </div>
     </div>
 </body>
+
 </html>
